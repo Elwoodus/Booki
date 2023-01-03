@@ -311,9 +311,6 @@ flex-basis: 33%;
     
 }
 
-
-
-
 /*étoiles*/
 
 .star-blue, .star-grey {
@@ -325,6 +322,89 @@ flex-basis: 33%;
 .star-grey {
     color: var(--grey);
 }
+
+/*Activités Marseille*/
+
+.activity-all {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    justify-content: space-between;
+    }
+
+.activites h3{
+    padding-left: 20px;
+    margin-top: 2%;
+    
+}
+.activites h4{
+    padding-left: 20px;
+}
+
+.card-activity{
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 0 8px darkgray;
+    margin: 0 10px 10px 10px;
+    transition: all 0.2s;
+ 
+}
+
+
+.card-activity img {
+    border-radius: 16px 16px 0 0;
+    height: 445px;
+    width: 302px;
+    object-fit: cover;
+    /*hh*/
+}
+
+
+.card-activity:hover{
+box-shadow: 0 0 8px var(--blue);
+cursor: pointer;
+transform: scale(1.02);
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--grey);
+    color: #fff;
+    padding: 20px;
+    border: solid red;
+  }
+
+  footer h4{
+    color: black;
+    
+  }
+  
+  footer a {
+    color:black;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer div a {
+    margin-top: 10px;
+  }
+
+ 
+
+
 
 
 
