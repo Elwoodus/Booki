@@ -325,46 +325,49 @@ flex-basis: 33%;
 
 /*Activités Marseille*/
 
-.activity-all {
+.activites {
+    margin: 40px 10px 20px 10px;
+}
+.activites-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    
     justify-content: space-between;
-    }
-
-.activites h3{
-    padding-left: 20px;
-    margin-top: 2%;
-    
+    /*hh*/
 }
-.activites h4{
-    padding-left: 20px;
-}
-
-.card-activity{
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 0 8px darkgray;
-    margin: 0 10px 10px 10px;
-    transition: all 0.2s;
- 
-}
-
-
-.card-activity img {
-    border-radius: 16px 16px 0 0;
-    height: 445px;
-    width: 302px;
-    object-fit: cover;
+.center-activity {
+    display: flex;
+    margin-left: 20px;
     /*hh*/
 }
 
+.card-activity {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    border-radius: 16px;
+    box-shadow: 0 0 8px darkgray;
+    max-width: 350px;
+    min-width: 200px;
+    
+}
 
-.card-activity:hover{
-box-shadow: 0 0 8px var(--blue);
-cursor: pointer;
-transform: scale(1.02);
+.card-activity:hover {
+    transition: all 0.2s;
+    box-shadow: 0 0 8px var(--blue);
+    cursor: pointer;
+    transform: scale(1.02);
+}
+.card-activity img{
+    width: 100%;   
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+/*     
+*       CARD HEIGHT    
+*/
+.card-activity img {
+    height: 90%;
 }
 
 /*Footer*/
@@ -372,15 +375,16 @@ transform: scale(1.02);
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color:var(--grey);
     color: #fff;
-    padding: 20px;
-    border: solid red;
+    padding: 45px;
+    margin-top: 2em;
+ 
   }
 
   footer h4{
     color: black;
+    margin: 0 0 5px 0;
     
   }
   
@@ -396,6 +400,8 @@ footer {
   footer div {
     display: flex;
     flex-direction: column;
+    min-width: 30%;
+    min-height: 100px;
   }
   
   footer div a {
