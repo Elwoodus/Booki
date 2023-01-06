@@ -26,7 +26,6 @@ h1 {
 #logo{
     height: 19px;
     margin-right: auto;
-    padding: 0 30px;
     }
 a
 {
@@ -85,7 +84,7 @@ nav a:hover{
     }
 
     form button:hover {
-        box-shadow: 1px 1px 10px var(--blue)
+        box-shadow: 1px 1px 10px var(--blue);
     }
 
     /* Filtres */
@@ -348,7 +347,6 @@ flex-basis: 33%;
     box-shadow: 0 0 8px darkgray;
     max-width: 350px;
     min-width: 200px;
-    
 }
 
 .card-activity:hover {
@@ -363,9 +361,7 @@ flex-basis: 33%;
     border-radius: 16px 16px 0 0;
 }
 
-/*     
-*       CARD HEIGHT    
-*/
+/* CARD HEIGHT  */
 .card-activity img {
     height: 90%;
 }
@@ -382,31 +378,37 @@ footer {
  
   }
 
-  footer h4{
+footer h4{
     color: black;
     margin: 0 0 5px 0;
     
   }
   
-  footer a {
+footer a {
     color:black;
     text-decoration: none;
   }
   
-  footer a:hover {
+footer a:hover {
     text-decoration: underline;
   }
   
-  footer div {
+footer div {
     display: flex;
     flex-direction: column;
     min-width: 30%;
     min-height: 100px;
   }
   
-  footer div a {
+footer div a {
     margin-top: 10px;
   }
+
+  /* Media Queries */
+
+@media (max-width: 768px){
+    
+}
 
  
 
