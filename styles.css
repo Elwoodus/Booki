@@ -4,6 +4,7 @@
     --light-blue: #DEEBFF;
     --grey: #F2F2F2;
     --white: #FFFFFF;
+    
 }
 
 main, header, footer {
@@ -53,9 +54,7 @@ nav {
 
 /*BARRE DE RECHERCHE*/
 
-#main1{
-    margin-top: 20px;
-}
+
 
 .fa-location-dot{
     background-color: var(--grey);
@@ -93,7 +92,7 @@ nav {
         box-shadow: 1px 1px 10px var(--blue);
     }
 
-    /* cacher la loupe */
+    /* Cacher la loupe */
 
 .fa-solid.fa-magnifying-glass {
     display: none;  
@@ -101,54 +100,54 @@ nav {
 
     /* Filtres */
 
-    .filter{
-    display: inline-flex;
-    padding-top: 18px;
-    flex-flow: row wrap;
-    align-items: center;
-    gap: 20px;
+#filtre {
+        width: 70%;
     }
-    
-    .filterbutton{
-    font-weight: bold;
-    border-radius: 30px;
-    border-left: none;
-    cursor: pointer;
-    margin: 0;
-    padding-right: 20px;
-    border: solid var(--grey);
-    border-radius: 30px;
+#filtre i{
+        color: var(--blue);
+
 }
-
-.filterbutton p {
-    margin: 0;
-    padding-right: 20px;
-    cursor: pointer;
-   
-    }
-
-
-.filterbutton:hover{
-        background-color: var(--grey);
-        box-shadow: 0 0 8px var(--blue);
+#filtre ul, #filtre li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         
     }
-.filterbutton .fa-heart, .fa-dog, .fa-money-bill-wave  {
-        padding: 14px 14px 14px 14px;
-        margin-right: 10px;
-        color: var(--blue);
+#filtre ul {
+        padding: 0;
     }
-.filterbutton .fa-child-reaching {
-        padding: 14px 17px 14px 17px;
-        margin-right: 10px;
-        color: var(--blue);
+#filtre li, #filterTitle {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-right: 0.5em; 
     }
-
-.filterbutton .fa-solid{
-    background-color: var(--light-blue);
-    border-radius: 30px;
-
+#filtre li {
+        height: 37px;
+        text-align: center;   
+        border: 2.5px solid var(--grey);
+        border-radius: 2em;
+        padding: 4px 20px; 
     }
+#filtre li:hover {
+        background-color: var(--light-blue);
+        box-shadow: 0 0 8px var(--blue);
+        cursor: pointer;
+    }
+#filterTitle {
+        padding: 4px 20px 4px 0;
+    }
+    
+    
+    
+#filtre li p{
+        padding: 0;
+    }
+#filtre li i{
+        font-size: 1.3em;
+        padding-right: 0.8em;
+    }
+    
 
     /*info*/
 
@@ -179,11 +178,6 @@ nav {
     display: flex;
     gap: 20px;
 }
-.hotel > div {
-    border-radius: 16px;
-    background-color: var(--grey);
-    
-}
 
 .hotel h3{
     padding-left: 20px;
@@ -203,6 +197,8 @@ flex-basis: 33%;
     align-items: flex-start;
     gap: 0;
     padding: 0 10px 0 10px;
+    background-color: var(--grey);
+    border-radius: 16px;
 
 }
 
@@ -215,9 +211,6 @@ flex-basis: 33%;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-around;
-    /*hh*/
-
-    
 }
 
 .card-h div {
@@ -234,6 +227,7 @@ flex-basis: 33%;
     box-shadow: 0 0 8px darkgray;
     margin: 0 10px 10px 10px;
     transition: all 0.2s;
+    flex-grow: 1;
     
     /*hh*/
 }
@@ -243,7 +237,6 @@ flex-basis: 33%;
     height: 120px;
     width: 100%;
     object-fit: cover;
-    /*hh*/
     
 }
 .card p, .card h4 {
@@ -263,6 +256,8 @@ flex-basis: 33%;
 .populaires{
     display: flex;
     flex-direction: column;
+    background-color: var(--grey);
+    border-radius: 16px;
     
 }
 
@@ -343,6 +338,7 @@ flex-basis: 33%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 47px;
     /*hh*/
 }
 .center-activity {
@@ -392,9 +388,7 @@ footer {
 
 footer h4{
     color: black;
-    margin: 0 0 5px 0;
-    
-  }
+    }
   
 footer a {
     color:black;
@@ -444,6 +438,7 @@ footer div a {
         text-align: center;
         justify-content: center;
         border-bottom: 3px solid var(--grey);
+        padding-bottom: 20px;
         }
 
         /* Barre de recherche */
@@ -458,16 +453,134 @@ footer div a {
             display: none;
         }
 
-      
+        /* Filtres*/
 
+        #filtre {
+            width: 90%;
+            margin: 0 auto;
+        }
+        #filtre ul {
+            display: grid;
+            grid-gap: 10px 5px;
+            
+        }
+        /* Titre des filtres : placement */
+        #filterTitle {
+            grid-column: 1 / 3;
+           
+        }
+    
+        #filtre ul :first-child{
+            font-size: 18px;
+            
+        }
+        #filtre li {
+            justify-content: flex-start;
+            font-size: 11px;
+            
+            border-radius: 25px; 
+        }
 
+      /* hébergement les plus populaires */
 
-
-
-        .hotel{
+    .hotel{
     flex-direction: column-reverse;
 }
+    hotel > div{
+    background-color: var(--white);
+    border-radius: 0%;
+    
+
 }
+    .populaires {
+    padding-left: 0;
+    border-radius: 0%;
+    margin: -27px;
+}
+    .card-populaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .card-p {
+    height: 150px;
+    width: 83%;
+    margin: 0 0 20px 0;
+}
+    .card-p img {
+    height: 150px;
+    width: 100px;
+}
+
+.hotel .populaires h3{
+    padding-left: 48px;
+}
+
+
+
+/*hébergement*/
+
+    .hebergements {
+    padding: 0;
+    background-color: var(--white);
+    margin-top: 20px;
+    
+}
+    .card {
+    height: 200px;
+    width: 100%;
+    margin: 0;
+}
+    
+    .card .stars {
+    margin-top: auto;
+}
+    .card-h {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+    .hebergements a{
+        display: none;
+    }
+
+/*activités*/
+
+.activites {
+    margin: 40px 0 20px 0;
+}
+.activites-list div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.card-activity {
+    height: 200px;
+} 
+.activites-list img {
+    height: 150px;
+    width: 100%;
+}
+
+/*footer*/
+
+footer {
+    display: block;
+    padding-left: 30px;
+}
+
+footer h4{
+    margin-bottom: 4px;
+}
+
+
+
+
+}
+
+
 
 
 
