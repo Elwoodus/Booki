@@ -100,7 +100,7 @@ nav {
 
     /* Filtres */
 
-#filtre {
+    #filtre {
         width: 70%;
     }
 #filtre i{
@@ -116,20 +116,20 @@ nav {
 #filtre ul {
         padding: 0;
     }
-#filtre li, #filterTitle {
+#filtre .fali, #filterTitle {
         font-size: 17px;
         font-weight: 700;
         line-height: 21px;
         margin-right: 0.5em; 
     }
-#filtre li {
+#filtre .fali {
         height: 37px;
         text-align: center;   
         border: 2.5px solid var(--grey);
         border-radius: 2em;
         padding: 4px 20px; 
     }
-#filtre li:hover {
+#filtre .fali:hover {
         background-color: var(--light-blue);
         box-shadow: 0 0 8px var(--blue);
         cursor: pointer;
@@ -148,6 +148,8 @@ nav {
         font-size: 1.3em;
         padding-right: 0.8em;
     }
+    
+
     
 
     /*info*/
@@ -383,7 +385,7 @@ footer {
     background-color:var(--grey);
     color: #fff;
     padding: 45px;
-    margin-top: 2em;
+    
  
   }
 
@@ -476,7 +478,7 @@ footer div a {
             font-size: 18px;
             
         }
-        #filtre li {
+        #filtre .fali {
             justify-content: flex-start;
             font-size: 11px;
             border-radius: 25px; 
