@@ -39,6 +39,7 @@ nav {
     justify-content: flex-end;
     flex-wrap: wrap;
     padding: 30px 30px 10px 0px;
+    margin-bottom: 45px;
 }
 
 .navheader a{
@@ -67,7 +68,7 @@ nav {
     position: absolute;
     }
     
-    form input {
+form input {
         border: 1px solid var(--grey);
         font-size: 16px;
         font-weight: bold;
@@ -76,7 +77,7 @@ nav {
         
     }
     
-    form button {
+form button {
         border-radius: 0 14px 14px 0;
         background-color: var(--blue);
         border: none;
@@ -88,7 +89,7 @@ nav {
         margin-left: -5px;
     }
 
-    form button:hover {
+form button:hover {
         box-shadow: 1px 1px 10px var(--blue);
     }
 
@@ -100,9 +101,9 @@ nav {
 
     /* Filtres */
 
-    #filtre {
+#filtre {
         width: 70%;
-    }
+}
 #filtre i{
         color: var(--blue);
 
@@ -154,14 +155,15 @@ nav {
 
     /*info*/
 
-   #info{
+#info{
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     
     
    }
-   .fa-solid.fa-info {
+
+.fa-solid.fa-info {
     border: 1px solid lightgray;
     border-radius: 50%;
     color: var(--blue);
@@ -207,6 +209,7 @@ flex-basis: 33%;
 
 .hebergements h3 {
     width: 100%;
+    margin-top: 30px;
 }
 
 .card-h {
@@ -232,7 +235,7 @@ flex-basis: 33%;
     transition: all 0.2s;
     flex-grow: 1;
     
-    /*hh*/
+
 }
 
 .card img {
@@ -254,6 +257,9 @@ flex-basis: 33%;
     margin-top: auto;
 }
 
+.hebergements a{
+    margin: -2px 24px;
+}
 /* Hebergements populaires */
 
 .populaires{
@@ -384,7 +390,8 @@ footer {
     justify-content: space-between;
     background-color:var(--grey);
     color: #fff;
-    padding: 45px;
+    padding: 0px;
+    
     
  
   }
@@ -407,7 +414,10 @@ footer div {
     flex-direction: column;
     min-width: 30%;
     min-height: 100px;
-  }
+    padding: 15px;
+    margin-left: 30px;
+    
+}
   
 footer div a {
     margin-top: 10px;
@@ -444,55 +454,53 @@ footer div a {
         padding-bottom: 20px;
         }
 
-        /* Barre de recherche */
-        .fa-solid.fa-magnifying-glass {
+    /* Barre de recherche */
+    
+    .fa-solid.fa-magnifying-glass {
             display: inline;
             background-color: var(--blue);
             margin-left: -5px;
             font-size: 15px;
             
         }
-        #main1 span {
+    #main1 span {
             display: none;
         }
 
         /* Filtres*/
 
-        #filtre {
+    #filtre {
             width: 100%;
             margin: 0 auto;
         }
-        #filtre ul {
+    #filtre ul {
             display: grid;
             grid-gap: 10px 5px;
             grid-template-columns: 1fr 1fr;
             
         }
         /* Titre des filtres : placement */
-        #filterTitle {
+    #filterTitle {
             grid-column: 1 / 3;
            
         }
     
-        #filtre ul :first-child{
+    #filtre ul :first-child{
             font-size: 18px;
             
         }
-        #filtre .fali {
+    #filtre .fali {
             justify-content: flex-start;
             font-size: 11px;
             border-radius: 25px; 
             padding: 4px 10px;
         }
 
-      /* hébergement les plus populaires */
+      /* Hébergement les plus populaires */
 
     .hotel{
     flex-direction: column-reverse;
 }
-
-    
-
 
     .populaires {
     padding-left: 0;
@@ -515,10 +523,13 @@ footer div a {
     width: 100px;
 }
 
-.hotel .populaires h3{
+    .hotel .populaires h3{
     padding-left: 48px;
 }
 
+    #info{
+    margin-bottom: 46px;
+}
 
 
 /*hébergement*/
@@ -550,32 +561,41 @@ footer div a {
 
 /*activités*/
 
-.activites {
+    .activites {
     margin: 40px 0 20px 0;
 }
-.activites-list div {
+    .activites-list div {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
 }
-.card-activity {
+    .card-activity {
     height: 200px;
 } 
-.activites-list img {
+    .activites-list img {
     height: 150px;
     width: 100%;
 }
 
+    .activites h3{
+    margin: 20px;
+    margin-bottom: 33px;
+}
+
+
 /*footer*/
 
-footer {
+    footer {
     display: block;
     padding-left: 30px;
 }
 
-footer h4{
+    footer h4{
     margin-bottom: 4px;
 }
+    footer div{
+        margin-left: -12px;
+    }
 
 }
 
@@ -627,16 +647,9 @@ footer h4{
     }
 
     /*footer*/
-  
+    
+    footer div{
+        margin-left: 24px;
+    }
 
-}
-
-
-
-
- 
-
-
-
-
-
+    }
