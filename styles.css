@@ -18,7 +18,7 @@ body
 font-family: 'Raleway' , sans-serif;
 }
 
-/* Nav */
+    /* Nav */
 
 h1 {
     font-size: 20px;
@@ -53,7 +53,7 @@ nav {
     
 }
 
-/*BARRE DE RECHERCHE*/
+    /*Barre de recherche*/
 
 
 
@@ -260,7 +260,7 @@ flex-basis: 33%;
 .hebergements a{
     margin: -2px 24px;
 }
-/* Hebergements populaires */
+    /* Hebergements populaires */
 
 .populaires{
     display: flex;
@@ -326,7 +326,7 @@ flex-basis: 33%;
     
 }
 
-/*étoiles*/
+    /*Etoiles*/
 
 .star-blue, .star-grey {
     background-color: inherit;
@@ -338,7 +338,7 @@ flex-basis: 33%;
     color: var(--grey);
 }
 
-/*Activités Marseille*/
+    /*Activités Marseille*/
 
 .activites {
     margin: 40px 10px 20px 10px;
@@ -348,12 +348,12 @@ flex-basis: 33%;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 47px;
-    /*hh*/
+    
 }
 .center-activity {
     display: flex;
     margin-left: 20px;
-    /*hh*/
+    
 }
 
 .card-activity {
@@ -378,12 +378,13 @@ flex-basis: 33%;
     border-radius: 16px 16px 0 0;
 }
 
-/* CARD HEIGHT  */
+    /* Taille cartes  */
+
 .card-activity img {
     height: 90%;
 }
 
-/*Footer*/
+    /*Footer*/
 
 footer {
     display: flex;
@@ -532,7 +533,7 @@ footer div a {
 }
 
 
-/*hébergement*/
+    /*Hébergement*/
 
     .hebergements {
     padding: 0;
@@ -559,7 +560,7 @@ footer div a {
         display: none;
     }
 
-/*activités*/
+    /*Activités*/
 
     .activites {
     margin: 40px 0 20px 0;
@@ -607,7 +608,7 @@ footer div a {
         margin: 7px;
 }
 
-    /*hebergement*/
+    /*Hebergement*/
 
     .hotel{
         flex-direction: column;
@@ -616,7 +617,7 @@ footer div a {
     .card-h div{
         min-width: auto;
     }
-    /*hebergement populaires*/
+    /*Hebergement populaires*/
 
     .card-populaires{
         display:grid;
@@ -624,7 +625,7 @@ footer div a {
         margin-bottom: 26px;
     }
     
-    /*activités*/
+    /*Activités*/
 
     .activites-list{
 
