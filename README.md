@@ -1,6 +1,6 @@
 # booki
 
-[![pres](images/Booki-pres.png)
+![pres](images/Booki-pres.png)
 
 ## Contexte
 
